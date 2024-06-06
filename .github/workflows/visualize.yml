@@ -1,0 +1,14 @@
+name: visualize
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: node.js 
+    steps:
+    - uses: repo-visualizer
+    
